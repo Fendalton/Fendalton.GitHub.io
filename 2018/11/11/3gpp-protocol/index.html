@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="SRB,DRB,">
+  <meta name="keywords" content="protocol,">
 
 
 
@@ -86,20 +86,18 @@
 
 
 
-<meta name="description" content="无线承载有两种，一种是数据承载称为DRB，一种是信令承载称为SRB。SRB一共有3中分别为SRB0、SRB1、SRB2。SRB0其实对应的是公共控制信道，是不属于某个用户的。是在小区建了好就会建了的。后两种信令承载是对应专用控制信道的，是对应用户的。SRB1在RRC建立过程完（rrcconnection setup）。SRB2和DRB在E-RAB指派阶段完成（rrc connectionreco">
-<meta name="keywords" content="SRB,DRB">
+<meta name="description" content="所有36系列协议总结如下，仅供参考： TS 36.101Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio transmission and reception. TS 36.104Evolved Universal Terrestrial Radio Access (E-UTRA); Bas">
+<meta name="keywords" content="protocol">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SRB与DRB">
-<meta property="og:url" content="http://wangzhijun.me/2018/11/04/SRB与DRB/index.html">
+<meta property="og:title" content="3gpp_protocol">
+<meta property="og:url" content="http://wangzhijun.me/2018/11/11/3gpp-protocol/index.html">
 <meta property="og:site_name" content="月上蕉窗">
-<meta property="og:description" content="无线承载有两种，一种是数据承载称为DRB，一种是信令承载称为SRB。SRB一共有3中分别为SRB0、SRB1、SRB2。SRB0其实对应的是公共控制信道，是不属于某个用户的。是在小区建了好就会建了的。后两种信令承载是对应专用控制信道的，是对应用户的。SRB1在RRC建立过程完（rrcconnection setup）。SRB2和DRB在E-RAB指派阶段完成（rrc connectionreco">
+<meta property="og:description" content="所有36系列协议总结如下，仅供参考： TS 36.101Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio transmission and reception. TS 36.104Evolved Universal Terrestrial Radio Access (E-UTRA); Bas">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fwwgftoi6rj30fb0efwfw.jpg">
-<meta property="og:updated_time" content="2018-11-04T16:01:44.161Z">
+<meta property="og:updated_time" content="2018-11-11T01:58:13.128Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SRB与DRB">
-<meta name="twitter:description" content="无线承载有两种，一种是数据承载称为DRB，一种是信令承载称为SRB。SRB一共有3中分别为SRB0、SRB1、SRB2。SRB0其实对应的是公共控制信道，是不属于某个用户的。是在小区建了好就会建了的。后两种信令承载是对应专用控制信道的，是对应用户的。SRB1在RRC建立过程完（rrcconnection setup）。SRB2和DRB在E-RAB指派阶段完成（rrc connectionreco">
-<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fwwgftoi6rj30fb0efwfw.jpg">
+<meta name="twitter:title" content="3gpp_protocol">
+<meta name="twitter:description" content="所有36系列协议总结如下，仅供参考： TS 36.101Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio transmission and reception. TS 36.104Evolved Universal Terrestrial Radio Access (E-UTRA); Bas">
 
 
 
@@ -129,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://wangzhijun.me/2018/11/04/SRB与DRB/">
+  <link rel="canonical" href="http://wangzhijun.me/2018/11/11/3gpp-protocol/">
 
 
 
 
 
-  <title>SRB与DRB | 月上蕉窗</title>
+  <title>3gpp_protocol | 月上蕉窗</title>
   
 
 
@@ -304,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangzhijun.me/2018/11/04/SRB与DRB/">
+    <link itemprop="mainEntityOfPage" href="http://wangzhijun.me/2018/11/11/3gpp-protocol/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wang Zhijun">
@@ -321,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">SRB与DRB</h1>
+          <h1 class="post-title" itemprop="name headline">3gpp_protocol</h1>
         
 
         <div class="post-meta">
@@ -333,8 +331,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-04T23:38:33+08:00">
-                2018-11-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-11T09:56:39+08:00">
+                2018-11-11
               </time>
             
 
@@ -374,8 +372,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/04/SRB与DRB/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/04/SRB与DRB/" itemprop="commentCount"></span>
+                <a href="/2018/11/11/3gpp-protocol/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/11/3gpp-protocol/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -397,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  567 字
+                  945 字
                 </span>
               
 
@@ -413,7 +411,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -434,25 +432,66 @@
       
 
       
-        <p><img src="https://ws2.sinaimg.cn/large/006tNbRwgy1fwwgftoi6rj30fb0efwfw.jpg" alt=""></p>
-<p>无线承载有两种，一种是数据承载称为DRB，一种是信令承载称为SRB。SRB一共有3中分别为SRB0、SRB1、SRB2。SRB0其实对应的是公共控制信道，是不属于某个用户的。是在小区建了好就会建了的。后两种信令承载是对应专用控制信道的，是对应用户的。SRB1在RRC建立过程完（rrcconnection setup）。SRB2和DRB在E-RAB指派阶段完成（rrc connectionreconfiguration）。</p>
+        <p>所有36系列协议总结如下，仅供参考：</p>
+<p>TS 36.101<br>Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio transmission and reception.</p>
+<p>TS 36.104<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Base Station (BS) radio transmission and reception.</p>
+<p>TS 36.106<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Rrepeater radio transmission and reception.</p>
+<p>TS 36.113<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Base Station (BS) and repeater ElectroMagnetic Compatibility (EMC).</p>
+<p>TS 36.124<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Electromagnetic compatibility (EMC) requirements for mobile terminals and ancillary equipment.</p>
+<p>TS 36.133<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Requirements for support of radio resource management.</p>
+<p>TS 36.141<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Base Station (BS) conformance testing.</p>
+<p>TS 36.143<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Repeater conformance testing.</p>
+<p>TS 36.201<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Long Term Evolution (LTE) physical layer; General description.</p>
+<p>TS 36.211<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Physical channels and modulation.</p>
+<p>TS 36.212<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Multiplexing and channel coding.</p>
+<p>TS 36.213<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Physical layer procedures.</p>
+<p>TS 36.214<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Physical layer - Measurements.</p>
+<p>TS 36.300<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access (E-UTRAN); Overall description; Stage 2.</p>
+<p>TS 36.302<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Services provided by the physical layer.</p>
+<p>TS 36.304<br>Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) procedures in idle mode.</p>
+<p>TS 36.306<br>Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio access capabilities.</p>
+<p>TS 36.314<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Layer 2 - Measurements.</p>
+<p>TS 36.321<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Medium Access Control (MAC) protocol specification.</p>
+<p>TS 36.322<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Radio Link Control (RLC) protocol specification.</p>
+<p>TS 36.323<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Packet Data Convergence Protocol (PDCP) specification.</p>
+<p>TS 36.331<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Radio Resource Control (RRC); Protocol specification.</p>
+<p>TS 36.401<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Architecture description.</p>
+<p>TS 36.410<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); S1 layer 1 general aspects and principles.</p>
+<p>TS 36.411<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); S1 layer 1.</p>
+<p>TS 36.412<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); S1 signalling transport.</p>
+<p>TS 36.413<br>Evolved Universal Terrestrial Radio Access (E-UTRA) ; S1 Application Protocol (S1AP).</p>
+<p>TS 36.414<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); S1 data transport.</p>
+<p>TS 36.420<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); X2 general aspects and principles.</p>
+<p>TS 36.421</p>
+<p>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); X2 layer 1.</p>
+<p>TS 36.422<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); X2 signalling transport.</p>
+<p>TS 36.423<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); X2 Application Protocol (X2AP).</p>
+<p>TS 36.424<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); X2 data transport.</p>
+<p>TS 36.440<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); General aspects and principles for interfaces supporting Multimedia Broadcast Multicast Service (MBMS) within E-UTRAN.</p>
+<p>TS 36.441<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Layer 1 for interfaces supporting Multimedia Broadcast Multicast Service (MBMS) within E-UTRAN.</p>
+<p>TS 36.442<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Signalling Transport for interfaces supporting Multimedia Broadcast Multicast Service (MBMS) within E-UTRAN.</p>
+<p>TS 36.443<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); M2 Application Protocol (M2AP).</p>
+<p>TS 36.444<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); M3 Application Protocol (M3AP).</p>
+<p>TS 36.445<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); M1 Data Transport.</p>
+<p>TS 36.446<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); M1 User Plane protocol.</p>
+<p>TS 36.508<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Common test environments for User Equipment (UE) conformance testing.</p>
+<p>TS 36.509<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Terminal logical test interface; Special conformance testing functions.</p>
+<p>TS 36.521-1<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access Network (E-UTRAN); User Equipment (UE) conformance specification; Radio transmission and reception Part 1: conformance testing.</p>
+<p>TS 36.521-2<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access Network (E-UTRAN); User Equipment (UE) conformance specification; Radio transmission and reception Part 2: ICS.</p>
+<p>TS 36.523-1<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access Network (E-UTRAN); User Equipment (UE) conformance specification; Part 1: Protocol conformance specification.</p>
+<p>TS 36.523-2<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access Network (E-UTRAN); User Equipment (UE) conformance specification; Part 2: ICS.</p>
+<p>TS 36.523-3<br>Evolved Universal Terrestrial Radio Access (E-UTRA) and Evolved Universal Terrestrial Radio Access Network (E-UTRAN); User Equipment (UE) conformance specification; Part 3: Abstract Test Suites (ATS).</p>
+<p>TR 36.801<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Measurement Requirements.</p>
+<p>TR 36.803<br>Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio transmission and reception.</p>
+<p>TR 36.804<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Base Station (BS) radio transmission and reception.</p>
+<p>TR 36.902<br>Evolved Universal Terrestrial Radio Access Network (E-UTRAN); Self-configuring and self-optimizing network (SON) use cases and solutions.</p>
+<p>TR 36.913<br>Requirements for further advancements for E-UTRA (LTE-Advanced).</p>
+<p>TR 36.938<br>Improved network controlled mobility between LTE and 3GPP2/mobile WiMAX radio technologies.</p>
+<p>TR 36.942<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Radio Frequency (RF) system scenarios.</p>
+<p>TR 36.956<br>Evolved Universal Terrestrial Radio Access (E-UTRA); Repeater planning guidelines and system analysis.</p>
 <blockquote>
-<p>rrcConnectionReqest是在SRB0上传输的， SRB0一直存在，用来传输映射到CCCH的RRC信令。UE收到NodeB的rrcConnectionSetup信令后，UE和NodeB之间的SRB1就建立起来了。eNodeB向UE发送RRCConnectionReconfiguration消息，建立SRB2和DRB.</p>
+<p><a href="http://www.3gpp.org" target="_blank" rel="noopener">3gpp官网</a></p>
 </blockquote>
-<h2 id="一、SRB（信令无线承载）"><a href="#一、SRB（信令无线承载）" class="headerlink" title="一、SRB（信令无线承载）"></a>一、SRB（信令无线承载）</h2><p>“Signalling Radio Bearers” (SRBs) are defined as Radio Bearers (RB) that are used only for the transmission of RRC and NAS messages. More specifically, the following three SRBs are defined:</p>
-<ul>
-<li>SRB0 is for RRC messages using the CCCH logical channel;</li>
-<li>SRB1 is for RRC messages (which may include a piggybacked NAS message) as well as for NAS messages prior to the establishment of SRB2, all using DCCH logical channel;</li>
-<li>SRB2 is for NAS messages, using DCCH logical channel. SRB2 has a lower-priority than SRB1 and is always configured by E-UTRAN after security activation.</li>
-</ul>
-<p>下行piggybacked NAS消息仅仅使用在附着过程（例如连接成功/失败）：承载的建立/修改/释放。上行的piggybacked NAS消息在连接建立期间初始化NAS消息（也就是发起连接建立，MSG3）.</p>
-<blockquote>
-<p>通过SRB2传输NAS消息也是被包含在RRC消息中的，但是这些NAS消息不包括任何RRC协议控制信息，只是在RRC消息传输的时候包含在RRC中，相当于此时RRC是一个载体的形式。</p>
-</blockquote>
-<blockquote>
-<p>一旦安全模式被激活，所有SRB1和SRB2的RRC消息（包括某些NAS或者3GPP消息），都会通过PDCP来进行完整性保护和加密，NAS只是单独对NAS消息进行完整性保护和加密。换句话说，LTE存在的2层加密和保护：NAS只进行控制信令的加密工作，而PDCP同时进行控制平面和数据平面的完保和加密工作，SRB2的使用还要注意联系一点就是：它是建立在专用承载基础上的，使用DCCH逻辑信道.</p>
-</blockquote>
-<h2 id="DRB（数据承载）"><a href="#DRB（数据承载）" class="headerlink" title="DRB（数据承载）"></a>DRB（数据承载）</h2><p>DRB承载用户面数据，根据QoS不同，UE与eNodeB之间可同时最多建立8个DRB。</p>
 
       
     </div>
@@ -470,9 +509,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/SRB/" rel="tag"><i class="fa fa-tag"></i> SRB</a>
-          
-            <a href="/tags/DRB/" rel="tag"><i class="fa fa-tag"></i> DRB</a>
+            <a href="/tags/protocol/" rel="tag"><i class="fa fa-tag"></i> protocol</a>
           
         </div>
       
@@ -485,8 +522,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/04/心流-读后感/" rel="next" title="《心流》读后感整理">
-                <i class="fa fa-chevron-left"></i> 《心流》读后感整理
+              <a href="/2018/11/10/惠林顿/" rel="next" title="惠林顿">
+                <i class="fa fa-chevron-left"></i> 惠林顿
               </a>
             
           </div>
@@ -494,10 +531,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/06/codetest/" rel="prev" title="code test">
-                code test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -552,17 +585,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -634,22 +658,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、SRB（信令无线承载）"><span class="nav-number">1.</span> <span class="nav-text">一、SRB（信令无线承载）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DRB（数据承载）"><span class="nav-number">2.</span> <span class="nav-text">DRB（数据承载）</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
