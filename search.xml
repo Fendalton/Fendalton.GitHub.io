@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[36304]]></title>
     <url>%2F2018%2F11%2F11%2F36304%2F</url>
-    <content type="text"><![CDATA[TS 36.304(Idle状态的UE过程)主要描述了UE空闲模式下的过程，主要包括：空闲模式的功能以及空闲模式下的PLMN选择，小区选择和重选，小区登记和接入限制，广播信息接收和寻呼。]]></content>
+    <content type="text"><![CDATA[TS 36.304(Idle状态的UE过程)主要描述了UE空闲模式下的过程，主要包括：空闲模式的功能以及空闲模式下的PLMN选择，小区选择和重选，小区登记和接入限制，广播信息接收和寻呼。 1. 小区切换准则1.1. S准则Srxlev&gt;0;Srxlev = Qrxlevmeas– (Qrxlevmin + Qrxlevminoffset) - PcompensationQrxlevmeas 是候选小区的参考信号接收功率RSRP；Qrxlevmin 和 Qrxlevminoffset都是在SIB中配置的小区驻留的最小接收电平（在SIB1中），仅当UE驻留在VPLMN小区的时候才用到Qrxlevminoffset；Pcompensation是取UE上行最大可使用的发射功率PEMAX减去UE最大射频输出功率PUMAX的差与0之中的最大值（即MAX（PEMAX－PUMAX，0））单位dB。 1.2 R准则所谓R准则，是指对于服务小区的Rs和目标小区的Rt分别满足Rs = Qmeas,s + QHystRt = Qmeas,t – Qoffset其中Qmeas是测量小区的RSRP值，Qoffset定义了目标小区的偏移值，对于具有同等优先级的异频小区来说，包括基于小区的偏移值和基于频率的偏移值两个部分。如果目标小区在Treselection时间内（同频和异频的Treselection可能不同），Rt持续超过Rs，那么UE就会重选到目标小区。 Rs = Qmeas_s + Qhysts Rn = Qmeas_n – Qoffsets_n 其中： Qmeas_s 为服务小区接收信号质量测量值，即 P-CCPCH 的 RSCP； Qmeas_n为临小区接收信号质量测量值； Qhysts为小区重选迟滞； Qoffsets_n为两个小区接收信号质量要求的差值。]]></content>
       <categories>
         <category>LTE</category>
       </categories>
