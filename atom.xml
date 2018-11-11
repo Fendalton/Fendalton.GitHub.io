@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wangzhijun.me/"/>
-  <updated>2018-11-11T01:58:13.128Z</updated>
+  <updated>2018-11-11T08:45:20.661Z</updated>
   <id>http://wangzhijun.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>36304</title>
+    <link href="http://wangzhijun.me/2018/11/11/36304/"/>
+    <id>http://wangzhijun.me/2018/11/11/36304/</id>
+    <published>2018-11-11T08:44:28.000Z</published>
+    <updated>2018-11-11T08:45:20.661Z</updated>
+    
+    <content type="html"><![CDATA[<p>TS 36.304(Idle状态的UE过程)<br>主要描述了UE空闲模式下的过程，主要包括：空闲模式的功能以及空闲模式下的PLMN选择，小区选择和重选，小区登记和接入限制，广播信息接收和寻呼。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;TS 36.304(Idle状态的UE过程)&lt;br&gt;主要描述了UE空闲模式下的过程，主要包括：空闲模式的功能以及空闲模式下的PLMN选择，小区选择和重选，小区登记和接入限制，广播信息接收和寻呼。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="LTE" scheme="http://wangzhijun.me/categories/LTE/"/>
+    
+    
+      <category term="protocol" scheme="http://wangzhijun.me/tags/protocol/"/>
+    
+  </entry>
   
   <entry>
     <title>3gpp_protocol</title>
@@ -113,9 +139,9 @@
       <category term="新西兰" scheme="http://wangzhijun.me/categories/%E6%96%B0%E8%A5%BF%E5%85%B0/"/>
     
     
-      <category term="海湾" scheme="http://wangzhijun.me/tags/%E6%B5%B7%E6%B9%BE/"/>
-    
       <category term="毛利文化" scheme="http://wangzhijun.me/tags/%E6%AF%9B%E5%88%A9%E6%96%87%E5%8C%96/"/>
+    
+      <category term="海湾" scheme="http://wangzhijun.me/tags/%E6%B5%B7%E6%B9%BE/"/>
     
   </entry>
   
