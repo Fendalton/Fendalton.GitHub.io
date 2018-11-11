@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wangzhijun.me/"/>
-  <updated>2018-11-11T15:05:30.549Z</updated>
+  <updated>2018-11-11T16:07:55.295Z</updated>
   <id>http://wangzhijun.me/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="http://wangzhijun.me/2018/11/11/36304/"/>
     <id>http://wangzhijun.me/2018/11/11/36304/</id>
     <published>2018-11-11T08:44:28.000Z</published>
-    <updated>2018-11-11T15:05:30.549Z</updated>
+    <updated>2018-11-11T16:07:55.295Z</updated>
     
-    <content type="html"><![CDATA[<p>TS 36.304(Idle状态的UE过程)<br>主要描述了UE空闲模式下的过程，主要包括：空闲模式的功能以及空闲模式下的PLMN选择，小区选择和重选，小区登记和接入限制，广播信息接收和寻呼。</p><h2 id="1-小区切换准则"><a href="#1-小区切换准则" class="headerlink" title="1. 小区切换准则"></a>1. 小区切换准则</h2><h3 id="1-1-S准则"><a href="#1-1-S准则" class="headerlink" title="1.1. S准则"></a>1.1. S准则</h3><p>Srxlev&gt;0;<br>Srxlev = Qrxlevmeas– (Qrxlevmin + Qrxlevminoffset) - Pcompensation<br>Qrxlevmeas 是候选小区的参考信号接收功率RSRP；<br>Qrxlevmin 和 Qrxlevminoffset都是在SIB中配置的小区驻留的最小接收电平（在SIB1中），仅当UE驻留在VPLMN小区的时候才用到Qrxlevminoffset；<br>Pcompensation是取UE上行最大可使用的发射功率PEMAX减去UE最大射频输出功率PUMAX的差与0之中的最大值（即MAX（PEMAX－PUMAX，0））单位dB。</p><h3 id="1-2-R准则"><a href="#1-2-R准则" class="headerlink" title="1.2 R准则"></a>1.2 R准则</h3><p>所谓R准则，是指对于服务小区的Rs和目标小区的Rt分别满足<br>Rs = Qmeas,s + QHyst<br>Rt = Qmeas,t – Qoffset<br>其中Qmeas是测量小区的RSRP值，Qhysts为小区重选迟滞，Qoffset定义了目标小区的偏移值，对于具有同等优先级的异频小区来说，包括基于小区的偏移值和基于频率的偏移值两个部分。<br>如果目标小区在Treselection时间内（同频和异频的Treselection可能不同），Rt持续超过Rs，那么UE就会重选到目标小区。</p><p>Rs = Qmeas_s + Qhysts Rn = Qmeas_n – Qoffsets_n 其中：    Qmeas_s 为服务小区接收信号质量测量值，即 P-CCPCH 的 RSCP；    Qmeas_n为临小区接收信号质量测量值；    Qhysts为小区重选迟滞；    Qoffsets_n为两个小区接收信号质量要求的差值。 </p>]]></content>
+    <content type="html"><![CDATA[<p>TS 36.304(Idle状态的UE过程)<br>主要描述了UE空闲模式下的过程，主要包括：空闲模式的功能以及空闲模式下的PLMN选择，小区选择和重选，小区登记和接入限制，广播信息接收和寻呼。</p><h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><p>E-UTRAN频点和异系统频点的优先级分为绝对优先级和专用优先级两种：</p><ul><li>绝对优先级通过系统消息下发： <ol><li>服务频点的优先级通过参数CellReselPriority配置，在SIB3中广播。 </li><li>EUTRAN异频邻频的优先级在SIB5中广播</li><li>UTRAN邻频的优先级在SIB6中广播 </li><li>GERAN邻频的优先级在SIB7中广播 </li><li>CDMA2000邻频的优先级在SIB8中广播</li></ol></li><li>专用优先级在释放UE无线资源时，通过RRC Connection Release消息下发，针对单个UE有效。专用优先级可用于负载均衡算法，将高负载小区下的部分用户设置本小区频点为专用低优先级从而实现用户迁移。</li></ul><h2 id="重选"><a href="#重选" class="headerlink" title="重选"></a>重选</h2><ol><li>测量：<ol><li>同频小区：同频小区一定同优先级，测量由参数SIntraSearch控制。</li><li>异频异系统：异频小区的优先级&lt;=当前服务小区，异系统小区的优先级低于当前E-UTRAN小区时，由参数SNonIntraSearch控制起测。异频或异系统小区优先级&gt;=服务小区优先级，则一直测量。</li></ol></li><li>重选判决：<ol><li>同频或同优先级小区使用R准则</li><li>高优先级小区重选，设定的小区重选时间内、高优先级小区S值&gt;ThreshXHigh且UE在当前服务小区驻留超过1s，则重选至高优先级小区 </li><li>低优先级小区重选，没有高优先级邻区满足重选条件、在设定的小区重选时间内、服务小区的Srxlev值小于服务频点低优先级重选门限ThrshServLow且邻区Srxlev值大于低优先级重选门限ThreshXLow，则重选至低优先级邻区。</li></ol></li></ol><blockquote><p>小区切换准则</p><ol><li>S准则<br>Srxlev = Qrxlevmeas– (Qrxlevmin + Qrxlevminoffset) - Pcompensation &gt; 0。<br>Qrxlevmeas 是候选小区的参考信号接收功率RSRP；<br>Qrxlevmin 和 Qrxlevminoffset都是在SIB中配置的小区驻留的最小接收电平（在SIB1中），仅当UE驻留在VPLMN小区的时候才用到Qrxlevminoffset；<br>Pcompensation是取UE上行最大可使用的发射功率PEMAX减去UE最大射频输出功率PUMAX的差与0之中的最大值（即MAX（PEMAX－PUMAX,0））单位dB。</li><li>R准则<br>同频或同优先级小区使用R准则。所谓R准则，是指对于服务小区的Rs和目标小区的Rt分别满足<br>Rs = Qmeas,s + QHyst<br>Rt = Qmeas,t – Qoffset<br>其中Qmeas是测量小区的RSRP值，Qhysts为小区重选迟滞，Qoffset定义了目标小区的偏移值，对于具有同等优先级的异频小区来说，包括基于小区的偏移值和基于频率的偏移值两个部分。<br>如果目标小区在Treselection时间内（同频和异频的Treselection可能不同），Rt持续超过Rs，那么UE就会重选到目标小区。</li></ol></blockquote><h2 id="2-小区重选评估过程"><a href="#2-小区重选评估过程" class="headerlink" title="2. 小区重选评估过程"></a>2. 小区重选评估过程</h2>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;TS 36.304(Idle状态的UE过程)&lt;br&gt;主要描述了UE空闲模式下的过程，主要包括：空闲模式的功能以及空闲模式下的PLMN选择，小区选择和重选，小区登记和接入限制，广播信息接收和寻呼。&lt;/p&gt;
-&lt;h2 id=&quot;1-小区切换准则&quot;&gt;&lt;a href=&quot;#1-小区切换准
+&lt;h2 id=&quot;优先级&quot;&gt;&lt;a href=&quot;#优先级&quot; class=&quot;
       
     
     </summary>
