@@ -123,17 +123,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[code test]]></title>
-    <url>%2F2018%2F11%2F06%2Fcodetest%2F</url>
-    <content type="text"><![CDATA[123456789101112#include &lt;iostream&gt;#define NUMBER 100int main()&#123; int i=0; while(i++ &lt; NUMBER) &#123; printf("Hello world\n"); &#125; return 0;&#125;]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[SRB与DRB]]></title>
     <url>%2F2018%2F11%2F04%2FSRB%E4%B8%8EDRB%2F</url>
     <content type="text"><![CDATA[无线承载有两种，一种是数据承载称为DRB，一种是信令承载称为SRB。SRB一共有3中分别为SRB0、SRB1、SRB2。SRB0其实对应的是公共控制信道，是不属于某个用户的。是在小区建了好就会建了的。后两种信令承载是对应专用控制信道的，是对应用户的。SRB1在RRC建立过程完（rrcconnection setup）。SRB2和DRB在E-RAB指派阶段完成（rrc connectionreconfiguration）。 rrcConnectionReqest是在SRB0上传输的， SRB0一直存在，用来传输映射到CCCH的RRC信令。UE收到NodeB的rrcConnectionSetup信令后，UE和NodeB之间的SRB1就建立起来了。eNodeB向UE发送RRCConnectionReconfiguration消息，建立SRB2和DRB. 一、SRB（信令无线承载）“Signalling Radio Bearers” (SRBs) are defined as Radio Bearers (RB) that are used only for the transmission of RRC and NAS messages. More specifically, the following three SRBs are defined: SRB0 is for RRC messages using the CCCH logical channel; SRB1 is for RRC messages (which may include a piggybacked NAS message) as well as for NAS messages prior to the establishment of SRB2, all using DCCH logical channel; SRB2 is for NAS messages, using DCCH logical channel. SRB2 has a lower-priority than SRB1 and is always configured by E-UTRAN after security activation. 下行piggybacked NAS消息仅仅使用在附着过程（例如连接成功/失败）：承载的建立/修改/释放。上行的piggybacked NAS消息在连接建立期间初始化NAS消息（也就是发起连接建立，MSG3）. 通过SRB2传输NAS消息也是被包含在RRC消息中的，但是这些NAS消息不包括任何RRC协议控制信息，只是在RRC消息传输的时候包含在RRC中，相当于此时RRC是一个载体的形式。 一旦安全模式被激活，所有SRB1和SRB2的RRC消息（包括某些NAS或者3GPP消息），都会通过PDCP来进行完整性保护和加密，NAS只是单独对NAS消息进行完整性保护和加密。换句话说，LTE存在的2层加密和保护：NAS只进行控制信令的加密工作，而PDCP同时进行控制平面和数据平面的完保和加密工作，SRB2的使用还要注意联系一点就是：它是建立在专用承载基础上的，使用DCCH逻辑信道. DRB（数据承载）DRB承载用户面数据，根据QoS不同，UE与eNodeB之间可同时最多建立8个DRB。]]></content>

@@ -294,31 +294,6 @@
   </entry>
   
   <entry>
-    <title>code test</title>
-    <link href="http://wangzhijun.me/2018/11/06/codetest/"/>
-    <id>http://wangzhijun.me/2018/11/06/codetest/</id>
-    <published>2018-11-06T00:04:12.000Z</published>
-    <updated>2018-11-06T00:11:34.560Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NUMBER 100</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i++ &lt; NUMBER)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Hello world\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
-      
-    
-    </summary>
-    
-      <category term="编程" scheme="http://wangzhijun.me/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-      <category term="C++" scheme="http://wangzhijun.me/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SRB与DRB</title>
     <link href="http://wangzhijun.me/2018/11/04/SRB%E4%B8%8EDRB/"/>
     <id>http://wangzhijun.me/2018/11/04/SRB与DRB/</id>
