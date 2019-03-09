@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>里克尤尤</title>
+  <title>Eddy&#39;s Workshop</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://wangzhijun.me/</id>
   
   <author>
-    <name>LekeUU</name>
+    <name>Eddy</name>
     
   </author>
   
@@ -287,9 +287,9 @@
       <category term="新西兰" scheme="http://wangzhijun.me/categories/%E6%96%B0%E8%A5%BF%E5%85%B0/"/>
     
     
-      <category term="海湾" scheme="http://wangzhijun.me/tags/%E6%B5%B7%E6%B9%BE/"/>
-    
       <category term="毛利文化" scheme="http://wangzhijun.me/tags/%E6%AF%9B%E5%88%A9%E6%96%87%E5%8C%96/"/>
+    
+      <category term="海湾" scheme="http://wangzhijun.me/tags/%E6%B5%B7%E6%B9%BE/"/>
     
   </entry>
   
